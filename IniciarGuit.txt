@@ -1,3 +1,15 @@
 git init
 git add*
 git commit -m "Comit de teste com a turma 2019"
+git add *
+git config --global user.email "henrique.fantin.ns@gmail.com"
+git config --global user.name "Henrique Fantin"
+git add *
+git remote add origin https://github.com/henriquefantin/sad-2019.git
+git push -u origin master
+
+
+## TODO FIM DE AULA ##
+git add*
+git commit -m "Comit de teste com a turma 2019" 
+git push -u origin master
