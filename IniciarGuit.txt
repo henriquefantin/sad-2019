@@ -13,3 +13,6 @@ git push -u origin master
 git add*
 git commit -m "Comit de teste com a turma 2019" 
 git push -u origin master
+
+## BAIXAR 
+git pull
