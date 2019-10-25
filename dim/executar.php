@@ -4,10 +4,15 @@
 
     use dimensoes\DimCliente;
 
-    $dimCliente = new DimCliente();
-    $sumCliente = $dimCliente->carregarDimCliente();
+    try{
+        $dimCliente = new DimCliente();
+        $sumCliente = $dimCliente->carregarDimCliente();
+        
+        echo "Quantidade de Inclusões: ".$sumCliente->quantidadeInclusoes."<br>";
+        echo "Quantidade de Alterações: ".$sumCliente->quantidadeAlteracoes;
+    }catch(Exception $e){
+        die($e->getMessage());
+    }
     
-    echo "Quantidade de Inclusões: ".$sumCliente->quantidadeInclusoes."<br>";
-    echo "Quantidade de Alterações: ".$sumCliente->quantidadeAlteracoes;
     
 ?>

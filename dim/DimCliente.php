@@ -64,7 +64,7 @@ class DimCliente
             $resultComercial = $sqlComercial->get_result();
             while ($linhaComercial = $resultComercial->fetch_assoc()) { //percorrendo as linhas da tabela cliente e colocand o resultado em $linhaComercial
 
-                $sqlDim = $connDimensao->prepare('SELECT SK_cliente, nome, cpf, sexo, idade, bairro, cidade, uf 
+                $sqlDim = $connDimensao->prepare('SELECT SK_cliente, nome, cpf, sexo, idade, rua, bairro, cidade, uf 
                                                   FROM dim_cliente WHERE cpf = ? AND data_fim IS NULL');
                 $sqlDim->bind_param("s", $linhaComercial['cpf']);
                 $sqlDim->execute();
